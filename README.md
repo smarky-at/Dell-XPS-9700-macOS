@@ -1,9 +1,16 @@
-# Dell XPS 9700 17" macOS Monterey
+# Dell XPS 9700 17" macOS Ventura
+
+## Warning
+
+The current configuration has no working Wifi (with built-in Killer WiFi card)!
 
 ![Preview](about.png)
 
-✅ This configuration is fully compatible with `macOS Monterey`.\
-⏳ The latest supported and tested version is: `macOS Monterey 12.5`.\
+✅ This configuration is fully compatible with `macOS Ventura`.\
+⏳ The latest supported and tested version is: `macOS Ventura 13.1`.
+
+![Preview](about-ventura.png)
+
 😔 Two of the most awesome features of this laptop don't **yet** work: S3 sleep and audio. If you want to help, contact me!
 
 ![Setup](setup.jpg)
@@ -30,7 +37,6 @@ This is what I'm currently running on (check against yours, or your mileage may 
 | Kingston Fury DDR4-2933 MHz 2x32GB | 64GB of CL17-19-19 | yes, fully | / | yes, fully |
 | Samsung SSD 970 EVO Plus 2TB Media | M.2 Gen3 SSD, Slot A | yes, fully | Used for macOS + shared HFS+ Drive | yes, with Paragon HFS+ driver |
 | Samsung SSD 970 EVO Plus 2TB Media | M.2 Gen3 SSD, Slot B | yes, fully | Used for Windows + Manjaro Linux | yes, fully (Manjaro), with Paragon NTFS driver (Windows) |
-| Killer AX1650s | WiFi 6 & BT 5 Card | yes, pretty good | soldered in | yes, fully |
 | Touchpad | DELL098F:0004F3:311C, I2C | yes, fully | all gestures operational | yes, fully |
 | Keyboard | Standard PS2 | yes, fully | function keys are mapped | yes, fully |
 | Touch-Digitizer | ELAN2097:0004F3:2A15, I2C | yes, fully | all native gestures operational | yes, fully |
@@ -38,12 +44,13 @@ This is what I'm currently running on (check against yours, or your mileage may 
 | Battery | DELL 01RR3YM Li-poly 95.1Wh | yes, fully | / | yes, fully |
 | Sensors | Intel 8086:06fc:1028:098f 400 Series Sensor Hub | yes | Fans & Temps | yes, fully |
 | USB-C Video 4K@60Hz | / | yes, fully | / | yes, fully |
+| SD-Card reader | Realtek RTS5260 | yes, fully | update to OpenCore 0.8.8 + Kexts seems to have fixed it | yes, fully |
 | **Untested** |
 | Thunderbolt 3 | Intel JHL7540, JHL6540 | haven't tested TB3 peripherals yet | / | not yet tested |
 | External Monitor Audio | / | not yet tested | / | not yet tested |
 | Gigabit Ethernet | Realtek RTL8153 | not yet tested | / | not yet tested |
 | **Currently Not Working** |
-| SD-Card reader | Realtek RTS5260 | no | can't seem to get it working with any kexts | yes, fully |
+| Killer AX1650s | WiFi 6 & BT 5 Card | Bluetooth works, WiFi broke, still trying to fix it | soldered in | yes, fully |
 | Speakers & Jack | / | no | Codec currently unknown, it's tough | yes, fully |
 | Ambient Light Sensor | / | no | _ALI only responds 0x0 | yes, fully |
 | S3 sleep state | Deepest possible sleep state | no | panics on wake | yes, fully |
